@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  		<title>MAREY</title>
+<!-- 
+
+Highway Template
+
+https://templatemo.com/tm-520-highway
+
+-->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/light-box.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <a href="index.html">MA<em>REY</em></a>
+        </div>
+        <div class="menu-icon">
+        <span></span>
+      </div>
+    </nav>
+
+    <div id="video-container">
+        <div class="video-overlay"></div>
+        <div class="video-content">
+            <div class="inner">
+              <h2>MULTIMEDIA CONTENT <em>PRODUCER</em></h2>
+              <p>THIS IS David Martínez Reyes.</p>
+              <p>I WOULD LIKE HELP YOU ON ANY OF THIS PROJECTS</p>
+              <p>AR-VR / Android- Unidy Developer / Motion Graphics 3D / Graphic-Web Design</p>
+                <div class="scroll-icon">
+                    <a class="scrollTo" data-scrollTo="gallery" href="#"><img src="img/scroll-icon.png" alt=""></a>
+                </div>    
+            </div>
+        </div>
+        <video autoplay="" loop="" muted>
+        	<source src="highway-loop.mp4" type="video/mp4" />
+        </video>
+    </div>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería con Lightbox</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: white;
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 5px;
+            padding: 10px;
+            max-width: 1800px;
+            margin: auto;
+        }
+
+        /* Contenedor de cada video */
+        .video-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .video-item img {
+            width: 600px;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .video-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Información del video (título y subtítulo) */
+        .video-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 8px;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .video-title {
+            font-weight: bold;
+        }
+
+        .video-subtitle {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .lightbox iframe {
+            width: 80%;
+            height: 60vh;
+            max-width: 900px;
+        }
+
+        .close, .prev, .next {
+            position: absolute;
+            font-size: 24px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .close {
+            top: 20px;
+            right: 20px;
+        }
+
+        .prev {
+            left: 20px;
+        }
+
+        .next {
+            right: 20px;
+        }
+
+        .close:hover, .prev:hover, .next:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="gallery" id="gallery">
+            <div class="video-item" data-video="879661093">
+            <img src="img/portfolio_item_1.png" alt="Video de Vimeo">
+            <div class="video-info">
+                <div class="video-title">Animation</div>
+                <div class="video-subtitle">Logo Animation 3D</div>
+            </div>
+        </div>
+    
+        <div class="video-item" data-video="1024927001">
+            <img src="img/portfolio_item_2.png" alt="Video de Vimeo">
+            <div class="video-info">
+                <div class="video-title">Modeling/Animation/Lipsync</div>
+                <div class="video-subtitle">Character Animation 3D</div>
+            </div>
+        </div>
+    
+        <div class="video-item" data-video="891488943">
+            <img src="img/portfolio_item_3.png" alt="Video de Vimeo">
+            <div class="video-info">
+                <div class="video-title">Post Production</div>
+                <div class="video-subtitle">Soccer field Animation</div>
+            </div>
+        </div>
+    
+        <div class="video-item" data-video="922530878">
+            <img src="img/portfolio_item_4.png" alt="Video de Vimeo">
+            <div class="video-info">
+                <div class="video-title">Pre and Post Production</div>
+                <div class="video-subtitle">Full Edition FX</div>
+            </div>
+        </div>
+    
+        <div class="video-item" data-video="1069363019">
+            <img src="img/portfolio_item_5.png" alt="Video de Vimeo">
+            <div class="video-info">
+                <div class="video-title">Virtual Reality</div>
+                <div class="video-subtitle">Modeling & Texture House for Unity</div>
+            </div>
+        </div>
+    
+        <div class="video-item" data-video="295627353">
+            <img src="img/portfolio_item_6.png" alt="Video de Vimeo">
+            <div class="video-info">
+                <div class="video-title">Pre/Pro/Post Production</div>
+                <div class="video-subtitle">Spot Commercial</div>
+            </div>
+        </div>
+    
+        <div class="video-item" data-video="141803562">
+            <img src="img/portfolio_item_7.png" alt="Video de Vimeo">
+            <div class="video-info">
+                <div class="video-title">Modeling & Animation</div>
+                <div class="video-subtitle">Tv Spot</div>
+            </div>
+        </div>
+    
+        <div class="video-item" data-video="129168589">
+            <img src="img/portfolio_item_8.png" alt="Video de Vimeo">
+            <div class="video-info">
+                <div class="video-title">Modeling & Animation</div>
+                <div class="video-subtitle">Video Training</div>
+            </div>
+        </div>
+    
+        <div class="video-item" data-video="34534893">
+            <img src="img/portfolio_item_9.png" alt="Video de Vimeo">
+            <div class="video-info">
+                <div class="video-title">Tv Spot</div>
+                <div class="video-subtitle">Post Production</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="lightbox" id="lightbox">
+        <button class="close" onclick="closeLightbox()">✖</button>
+        <button class="prev" onclick="prevVideo()">◀</button>
+        <iframe id="videoFrame" frameborder="0" allowfullscreen></iframe>
+        <button class="next" onclick="nextVideo()">▶</button>
+    </div>
+    
+    <script>
+        let currentVideoIndex = 0;
+        const galleryItems = document.querySelectorAll('.video-item');
+        const lightbox = document.getElementById('lightbox');
+        const videoFrame = document.getElementById('videoFrame');
+        const videoIds = Array.from(galleryItems).map(item => item.dataset.video);
+    
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                currentVideoIndex = index;
+                openLightbox(videoIds[currentVideoIndex]);
+            });
+        });
+    
+        function openLightbox(videoId) {
+            videoFrame.src = `https://player.vimeo.com/video/${videoId}?autoplay=1&loop=0&muted=0`;
+            lightbox.style.display = 'flex';
+        }
+    
+        function closeLightbox() {
+            videoFrame.src = '';
+            lightbox.style.display = 'none';
+        }
+    
+        function prevVideo() {
+            currentVideoIndex = (currentVideoIndex - 1 + videoIds.length) % videoIds.length;
+            openLightbox(videoIds[currentVideoIndex]);
+        }
+    
+        function nextVideo() {
+            currentVideoIndex = (currentVideoIndex + 1) % videoIds.length;
+            openLightbox(videoIds[currentVideoIndex]);
+        }
+    </script>
+```
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <p>Copyright &copy; 2025 GT 
+    
+    | Designed by MAREY</p>
+            </div>
+        </div>
+    </footer>
+
+
+      <!-- Modal button -->
+    <div class="popup-icon">
+      <button id="modBtn" class="modal-btn"><img src="img/contact-icon.png" alt=""></button>
+    </div>  
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <!-- Modal Content -->
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h3 class="header-title">Say hello to <em>Highway</em></h3>
+          <div class="close-btn"><img src="img/close_contact.png" alt=""></div>    
+        </div>
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <div class="col-md-6 col-md-offset-3">
+            <form id="contact" action="" method="post">
+                <div class="row">
+                    <div class="col-md-12">
+                      <fieldset>
+                        <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="btn">Send Message Now</button>
+                      </fieldset>
+                    </div>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <section class="overlay-menu">
+      <div class="container">
+        <div class="row">
+          <div class="main-menu">
+              <ul>
+                  <li>
+                      <a href="index.html">Home - AudioVisual</a>
+                  </li>
+                  <li>
+                      <a href="masonry.html">Home - Graphic Design</a>
+                  </li>
+                  <li>
+                      <a href="grid.html">Home - Web Design</a>
+                  </li>
+                  <li>
+                      <a href="about.html">About Me</a>
+                  </li>
+                  <li>
+                      <a href="blog.html">Blog Entries</a>
+                  </li>
+                  <li>
+                      <a href="single-post.html">Single Post</a>
+                  </li>
+              </ul>
+              <p>Willing to defy reality to show his glory</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    
+</body>
+</html>
