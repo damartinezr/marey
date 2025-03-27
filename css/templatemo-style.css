@@ -230,6 +230,32 @@ nav {
   font-weight: 200;
   letter-spacing: 0.5px;
   text-align: center;
+
+
+}
+.video-content {
+  position: relative;
+  z-index: 1;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120vw;
+  height: 120vh;
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* Evita que el usuario interactúe con el video */
 }
 
 
