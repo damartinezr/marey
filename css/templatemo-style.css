@@ -221,7 +221,6 @@ nav {
   color: rgba(250,250,250,0.5);
 }
 
-
 .overlay-menu p {
   margin-top: 60px;
   font-size: 13px;
@@ -258,6 +257,23 @@ nav {
   pointer-events: none; /* Evita que el usuario interactúe con el video */
 }
 
+.video-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1; /* Para que el video quede en el fondo */
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 
 #video-container  {
@@ -280,7 +296,7 @@ nav {
 
 #video-container .video-overlay {
   z-index: 9999;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   width: 100%;
 }
 
@@ -504,7 +520,7 @@ nav {
   font-size: 14px;
   font-weight: 200;
   color: #fff;
-  background-color: rgba(250, 250, 250, 0.15);
+  background-color: #1f2e38;
   outline: none;
   border: none;
   box-shadow: none;
@@ -587,7 +603,7 @@ nav {
 footer {
   width: 100%;
   height: 80px;
-  background-color: #313131;
+  background-color: #243541;
 }
 
 footer p {
@@ -710,7 +726,7 @@ footer a:hover {
 
 .grid-portfolio {
   padding: 65px 0px;
-  background-color: #232323;
+  background-color: #1f2e38;
 }
 
 .grid-portfolio .portfolio-item {
@@ -790,9 +806,8 @@ footer a:hover {
 
 
 
-
  .services {
-  background-color: #232323;
+  background-color: #243541;
   padding: 65px 0px;
  }
 
@@ -804,7 +819,7 @@ footer a:hover {
  }
 
   .services .service-item:hover {
-    background-color: #313131;
+    background-color: #1e2c36;
   }
 
  .services .service-item .icon {
@@ -848,7 +863,7 @@ footer a:hover {
 }
 
 .more-about-us .content {
-  background-color: rgba(0,0,0,0.8);
+  background-color: #18232bc4;
   text-align: left;
   padding: 150px 60px;
   color: #fff;
@@ -902,14 +917,14 @@ footer a:hover {
 
 .pricing-tables {
   padding: 65px 0px;
-  background-color: #232323;
+  background-color: #243541;
 }
 
 .pricing-tables .table-item {
   padding: 60px 0px;
   margin: 15px 0px;
   text-align: center;
-  background-color: #313131;
+  background-color: #1a252e;
 }
 
 .pricing-tables .table-item h4 {
@@ -926,7 +941,7 @@ footer a:hover {
   color: #aaa;
   letter-spacing: 0.5px;
   text-transform: capitalize;
-  border-bottom: 1px solid #414141;
+  border-bottom: 1px solid #243541;
   width: 100%;
   padding-bottom: 40px;
 }
