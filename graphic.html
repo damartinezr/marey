@@ -41,9 +41,9 @@ https://templatemo.com/tm-520-highway
         <div class="video-overlay"></div>
         <div class="video-content">
             <div class="inner">
-              <h1>Graphic-Web <em>Design</em></h1>
-              <p>Through Adobe Suite programs</p>
-              <p>WordPress-Elemetor / Html, Css, Js</p>
+              <h1>Graphic<em>Design</em></h1>
+              <p>Through AI, Adobe Suite programs</p>
+              <p>Logos, Designing print layouts, Advertisements and commercials</p>
                 <div class="scroll-icon">
                     <a class="scrollTo" data-scrollTo="masonry" href="#"><img src="img/scroll-icon.png" alt=""></a>
                 </div>    
@@ -52,7 +52,7 @@ https://templatemo.com/tm-520-highway
           </div>
           <div class="video-container">
               <iframe 
-                  src="https://www.youtube.com/embed/D5y3vrPdBpI?autoplay=1&loop=1&playlist=D5y3vrPdBpI&mute=1&controls=0&showinfo=0&modestbranding=1" 
+                  src="https://www.youtube.com/embed/oIOspHgLx3c?autoplay=1&loop=1&playlist=oIOspHgLx3c&mute=1&controls=0&showinfo=0&modestbranding=1" 
                   frameborder="0" 
                   allow="autoplay; encrypted-media" 
                   allowfullscreen>
@@ -163,59 +163,64 @@ https://templatemo.com/tm-520-highway
             <div class="col-md-12">
                 <p>Copyright &copy; 2025 GT 
     
-    | Designed by MAREY</p>
+                  | Designed by MAREY</p>
+                </div>
             </div>
+        </footer>
+    
+        <div class="popup-icon">
+            <button id="modBtn" class="modal-btn"><img src="img/contact-icon.png" alt=""></button>
         </div>
-    </footer>
-
-
-      <!-- Modal button -->
-    <div class="popup-icon">
-      <button id="modBtn" class="modal-btn"><img src="img/contact-icon.png" alt=""></button>
-    </div>  
-
-    <!-- Modal -->
-    <div id="modal" class="modal">
-      <!-- Modal Content -->
-      <div class="modal-content">
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h3 class="header-title">Say hello to <em>Highway</em></h3>
-          <div class="close-btn"><img src="img/close_contact.png" alt=""></div>    
-        </div>
-        <!-- Modal Body -->
-        <div class="modal-body">
-          <div class="col-md-6 col-md-offset-3">
-            <form id="contact" action="" method="post">
-                <div class="row">
-                    <div class="col-md-12">
-                      <fieldset>
-                        <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
-                      </fieldset>
-                    </div>
-                    <div class="col-md-12">
-                      <fieldset>
-                        <button type="submit" id="form-submit" class="btn">Send Message Now</button>
-                      </fieldset>
+        
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="header-title">Say hello to <em>MAREY</em></h3>
+                    <div class="close-btn"><img src="img/close_contact.png" alt=""></div>
+                    <div class="col-md-12 text-center">
+                        <hr>
+                        <p>Connect with us on WhatsApp:</p>
+    <a href="https://wa.me/+50257116601" target="_blank" style="display: inline-block;">
+        <button style="background-color: #25D366; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; display: flex; align-items: center; gap: 5px;">
+            <img src="img/whatsapp-icon.png" alt="WhatsApp" style="width: 24px; height: 24px;">
+            Chat on WhatsApp
+        </button>
+    </a>
                     </div>
                 </div>
-            </form>
-          </div>
+            </div>
         </div>
-      </div>
-    </div>
-
-    
+        
+        <style>
+            /* Estilos opcionales para centrar el icono de WhatsApp */
+            .modal-body .text-center {
+                margin-top: 20px;
+            }
+            .modal-body .text-center a {
+                text-decoration: none; /* Opcional: quitar subrayado del enlace */
+            }
+        </style>
+        
+        <script>
+            // Puedes mantener tu script JavaScript existente para la funcionalidad del modal
+            const modBtn = document.getElementById('modBtn');
+            const modal = document.getElementById('modal');
+            const closeBtn = document.querySelector('.close-btn');
+        
+            modBtn.addEventListener('click', () => {
+                modal.style.display = 'block';
+            });
+        
+            closeBtn.addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+        
+            window.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        </script>
 
     <section class="overlay-menu">
       <div class="container">
